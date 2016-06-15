@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+
+	
+
+	 /*****For Computer Screen*****/
+	 @media (min-width: 992px) {
+
+	 	div#content
+	{
+		position: relative;
+		
+	}
+	div#container1{
+		width: 33%;
+	}
+	 	div#container2{
+	 		width:33%;
+	 		position: absolute;
+	 		top:0;
+	 		left:33.33%;
+	 	}
+
+	 	div#container3
+	 	{width: 33%;
+	 		position: absolute;
+	 		top:0;
+	 		left:66.66%;
+	 	}
+
+
+	 }
+
+/*****For Tablet Screen*****/
+     @media (min-width: 768px) and (max-width: 991px){
+     	div#container1{
+     		width: 49.5%;
+     	}
+
+     	div#container2{
+     		width: 49.5%;
+     		position: absolute;
+     		top:0;
+     		left:50%;
+     	}
+
+     	div#container3{
+     		width:100%;
+     	}
+
+     	/*****For Mobile Screen*****/
+      @media (max-width: 768px) {
+      	div#container1{width: 100%;}
+
+      	div#container2{width: 100%;}
+
+      	div#container3{width: 100%;}
+      } 
+
+     }
+
+
+
+	</style>
+	
+</head>
+<body>
+
+<h1 > Our Menu </h1>
+
+<div id="content">
+
+<div id="container1">
+
+<div  class="title" id="chicken">Chicken</div>
+<p id="p1">As Daenerys Targaryen rose to her feet, her black hissed, pale smoke venting from its mouth and nostrils. The other two pulled away from her breasts and added their voices to the call, translucent wings unfolding and stirring the air, and for the first time in hundreds of years, the night came alive with the music of dragons.</p>
+</div>
+
+<div  id="container2">
+	
+	<div class="title" id="beef">Beef</div>
+	<p id="p1">As Daenerys Targaryen rose to her feet, her black hissed, pale smoke venting from its mouth and nostrils. The other two pulled away from her breasts and added their voices to the call, translucent wings unfolding and stirring the air, and for the first time in hundreds of years, the night came alive with the music of dragons.</p>
+</div>
+
+<div  id="container3">
+
+<div class="title" id="sushi">Sushi</div>
+<p id="p1">As Daenerys Targaryen rose to her feet, her black hissed, pale smoke venting from its mouth and nostrils. The other two pulled away from her breasts and added their voices to the call, translucent wings unfolding and stirring the air, and for the first time in hundreds of years, the night came alive with the music of dragons.</p>
+
+</div>
+</div>
+
+</body>
+</html>
