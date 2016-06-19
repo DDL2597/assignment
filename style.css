@@ -11,11 +11,20 @@ div.title
 
 	 #chicken{
 	 	background-color: #ff0000;
+	 	border-top: 0;
+	 	border-right: 0;
 	 }
 
-	 #beef{background-color: #00FF00;}
+	 #beef{background-color: #00FF00;
+	 border-top: 0;
+	 	border-right: 0;
+	 	text-align: center;
+	 	color:white;}
 
-	 #sushi{background-color: #FFFF00;}
+	 #sushi{background-color: #FFFF00;
+	 border-top: 0;
+	 	border-right: 0;
+	 	text-align: center;}
 
 	 h1{
 		text-align: center;
@@ -74,4 +83,58 @@ div.title
 	 	position: relative;
 
 	}
-	
+	/*****For Computer Screen*****/
+	 @media (min-width: 992px) {
+
+	 	div#content
+	{
+		position: relative;
+		
+	}
+	div#container1{
+		width: 33%;
+	}
+	 	div#container2{
+	 		width:33%;
+	 		position: absolute;
+	 		top:0;
+	 		left:33.33%;
+	 	}
+
+	 	div#container3
+	 	{width: 33%;
+	 		position: absolute;
+	 		top:0;
+	 		left:66.66%;
+	 	}
+
+
+	 }
+
+/*****For Tablet Screen*****/
+     @media (min-width: 768px) and (max-width: 991px){
+     	div#container1{
+     		width: 49.5%;
+     	}
+
+     	div#container2{
+     		width: 49.5%;
+     		position: absolute;
+     		top:0;
+     		left:50%;
+     	}
+
+     	div#container3{
+     		width:100%;
+     	}
+
+     	/*****For Mobile Screen*****/
+      @media (max-width: 768px) {
+      	div#container1{width: 100%;}
+
+      	div#container2{width: 100%;}
+
+      	div#container3{width: 100%;}
+      } 
+
+     }
